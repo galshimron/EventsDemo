@@ -9,7 +9,7 @@ import com.gs.eventsdemo.utils.formatDate
 import java.lang.Exception
 
 class EventModelViewHolder(val eventItemViewHolderBinding: EventItemViewHolderBinding):RecyclerView.ViewHolder(eventItemViewHolderBinding.root) {
-    val TAG = "EventModelViewHolder"
+    private val TAG = "EventModelViewHolder"
 
     fun bind(eventModel: EventModel, clickListener: (clickItem: EventModel) -> Unit){
 
