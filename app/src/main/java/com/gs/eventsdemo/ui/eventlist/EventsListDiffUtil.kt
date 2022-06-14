@@ -1,7 +1,7 @@
 package com.gs.eventsdemo.ui.eventlist
 
 import androidx.recyclerview.widget.DiffUtil
-import com.gs.eventsdemo.ui.di.models.EventModel
+import com.gs.eventsdemo.di.models.EventModel
 
 class EventsListDiffUtil: DiffUtil.ItemCallback<EventModel>() {
     override fun areItemsTheSame(oldItem: EventModel, newItem: EventModel): Boolean {

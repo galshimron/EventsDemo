@@ -6,7 +6,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.ListAdapter
 import com.gs.eventsdemo.R
 import com.gs.eventsdemo.databinding.EventItemViewHolderBinding
-import com.gs.eventsdemo.ui.di.models.EventModel
+import com.gs.eventsdemo.di.models.EventModel
 
 class EventsListFragmentAdapter(private val  clickListener: (clickItem: EventModel) -> Unit) : ListAdapter<EventModel,EventModelViewHolder>(EventsListDiffUtil()) {
 

@@ -2,8 +2,10 @@ package com.gs.eventsdemo.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.gs.eventsdemo.R
 import com.gs.eventsdemo.databinding.ActivityMainBinding
+import com.gs.eventsdemo.utils.formatDate
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,6 +24,5 @@ class MainActivity : AppCompatActivity() {
             getTabAt(0)?.setIcon(R.drawable.ic_event_24)
             getTabAt(1)?.setIcon(R.drawable.ic_schedule_24)
         }
-
     }
 }

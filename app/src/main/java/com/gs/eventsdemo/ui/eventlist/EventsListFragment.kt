@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.gs.eventsdemo.R
 import com.gs.eventsdemo.databinding.EventsListFragmentLayoutBinding
-import com.gs.eventsdemo.ui.di.models.EventModel
+import com.gs.eventsdemo.di.models.EventModel
 import java.lang.Exception
 
 class EventsListFragment:Fragment() {

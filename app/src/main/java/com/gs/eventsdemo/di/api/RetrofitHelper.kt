@@ -1,4 +1,4 @@
-package com.gs.eventsdemo.ui.di.api
+package com.gs.eventsdemo.di.api
 
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import retrofit2.Retrofit

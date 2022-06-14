@@ -1,11 +1,11 @@
 package com.gs.eventsdemo.ui.eventlist
 
 import android.util.Log
-import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.gs.eventsdemo.databinding.EventItemViewHolderBinding
-import com.gs.eventsdemo.ui.di.models.EventModel
+import com.gs.eventsdemo.di.models.EventModel
+import com.gs.eventsdemo.utils.formatDate
 import java.lang.Exception
 
 class EventModelViewHolder(val eventItemViewHolderBinding: EventItemViewHolderBinding):RecyclerView.ViewHolder(eventItemViewHolderBinding.root) {
@@ -22,6 +22,7 @@ class EventModelViewHolder(val eventItemViewHolderBinding: EventItemViewHolderBi
                     Log.e(TAG, "bind: Exception Glide failed ${e.message}, ${e.stackTraceToString()}", )
                 }
             }
+            tvDate.text = eventModel.date.formatDate()
         }
 
         itemView.setOnClickListener {

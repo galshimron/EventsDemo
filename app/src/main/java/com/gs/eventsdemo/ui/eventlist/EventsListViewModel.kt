@@ -5,8 +5,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.gs.eventsdemo.ui.di.api.RetrofitHelper
-import com.gs.eventsdemo.ui.di.models.EventModel
+import com.gs.eventsdemo.di.api.RetrofitHelper
+import com.gs.eventsdemo.di.models.EventModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.lang.Exception
@@ -21,7 +21,7 @@ class EventsListViewModel : ViewModel() {
         viewModelScope.launch(Dispatchers.IO) {
             try {
                 val events = RetrofitHelper.getInstance().getEvents()
-                _eventsData.postValue(events)
+                _eventsData.postValue(events.reversed())
             }catch (e:Exception){
                 Log.e(TAG, "getEventsData: Exception ${e.message}, ${e.stackTraceToString()}", )
             }

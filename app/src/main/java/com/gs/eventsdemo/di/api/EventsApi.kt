@@ -1,6 +1,6 @@
-package com.gs.eventsdemo.ui.di.api
+package com.gs.eventsdemo.di.api
 
-import com.gs.eventsdemo.ui.di.models.EventModel
+import com.gs.eventsdemo.di.models.EventModel
 import retrofit2.http.GET
 
 interface EventsApi {

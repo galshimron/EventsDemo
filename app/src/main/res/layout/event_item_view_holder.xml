@@ -4,7 +4,7 @@
     <data>
         <variable
             name="eventModel"
-            type="com.gs.eventsdemo.ui.di.models.EventModel" />
+            type="com.gs.eventsdemo.di.models.EventModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -46,7 +46,6 @@
                 android:id="@+id/tvDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@{eventModel.date}"
                 android:layout_marginLeft="10dp"
                 app:layout_constraintLeft_toRightOf="@id/ivEventImage"
                 app:layout_constraintBottom_toBottomOf="parent"></TextView>
